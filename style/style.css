@@ -1,0 +1,187 @@
+
+
+.con{
+height: 800px;
+  background-color: #45a049;
+
+}
+
+.imag{
+  background-color: bisque;
+  width: 30%;
+  height: 50%;
+  border: 1px solid black;
+  float: left;
+  margin: calc(10%/6);
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column1 {
+  background-color: #04AA6D;
+  width: calc(100%/3);
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+
+/* Style the images inside the grid */
+.column1 img {
+  opacity: 0.8; 
+  cursor: pointer; 
+  float: left;
+  /* height: 300px; */
+  width: 100%;
+  margin: calc(10%/6);
+}
+
+.column1 img:hover {
+  opacity: 1;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container1 {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+   
+
+  /*  Template from w3 schools contact section */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], textarea, input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px;
+    border: 5px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    box-shadow: 0 0.5em 0.1em 0.1em rgb(191, 255, 101);
+    transform: translateY(-0.25em);
+    
+  }
+  
+  /* Style the container/contact section */
+  .container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    /* background-image: url(https://images.unsplash.com/photo-1644924604597-373500f4cf28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80); */
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+
+
+
+/* Google Mpas */
+  .mapouter {
+    margin-top: auto;
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 600px;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+  }
+
+
+
+/* Footer */
+  .footer div {
+height: auto;
+padding: 10px;
+background-color: #04AA6D;
+float: left;
+width: 25%;
+  }
+ 
+
+.footer ul:hover{
+text-decoration: underline;
+text-indent: 12;
+color: blueviolet;
+
+}
+
+li {
+  list-style: none;
+}
+
+h3 a{
+  color: inherit;
+    text-decoration: inherit; 
+  }
