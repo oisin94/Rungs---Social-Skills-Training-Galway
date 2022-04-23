@@ -1,24 +1,9 @@
 
 
-.con{
-height: 800px;
-  background-color: #45a049;
 
-}
-
-.imag{
-  background-color: bisque;
-  width: 30%;
-  height: 50%;
-  border: 1px solid black;
-  float: left;
-  margin: calc(10%/6);
-}
-
-
-/* The grid: Four equal columns that floats next to each other */
+/* Gallery */
+/* The grid: 3 equal columns that floats next to each other */
 .column1 {
-  background-color: #04AA6D;
   width: calc(100%/3);
   padding: 10px;
   box-sizing: border-box;
@@ -30,11 +15,11 @@ height: 800px;
   opacity: 0.8; 
   cursor: pointer; 
   float: left;
-  /* height: 300px; */
   width: 100%;
   margin: calc(10%/6);
 }
 
+/* Some customisation done to get a box-shadow on the images */
 .column1 img:hover {
   opacity: 1;
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
@@ -91,6 +76,7 @@ height: 800px;
     resize: vertical;
   }
   
+  /* Moving Submit button - some customisation*/
   button {
     background-color: #04AA6D;
     color: white;
@@ -100,7 +86,7 @@ height: 800px;
     cursor: pointer;
   }
   
-  button:hover {
+  .column button:hover {
     background-color: #45a049;
     box-shadow: 0 0.5em 0.1em 0.1em rgb(191, 255, 101);
     transform: translateY(-0.25em);
@@ -108,6 +94,7 @@ height: 800px;
   }
   
   /* Style the container/contact section */
+  /* Could not find a suitable image for the background */
   .container2 {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -147,30 +134,32 @@ height: 800px;
     margin-top: auto;
     position: relative;
     text-align: right;
-    height: 500px;
-    width: 600px;
+    height: auto;
+    width: 100%;
   }
 
   .gmap_canvas {
     overflow: hidden;
     background: none !important;
-    height: 500px;
-    width: 600px;
+    height: auto;
+    width: 100%;
   }
 
 
 
 /* Footer */
-  .footer div {
+  .footer1 div {
 height: auto;
 padding: 10px;
 background-color: #04AA6D;
 float: left;
-width: 25%;
+width: 20%;
+text-align: center;
+
   }
  
 
-.footer ul:hover{
+.footer1 ul:hover{
 text-decoration: underline;
 text-indent: 12;
 color: blueviolet;
@@ -179,9 +168,52 @@ color: blueviolet;
 
 li {
   list-style: none;
+  
+}
+
+ol{
+  list-style: circle;
 }
 
 h3 a{
   color: inherit;
     text-decoration: inherit; 
   }
+
+.classList{
+  display: none;
+}
+
+  h4{
+    font-size: 18px;
+  }
+
+.footer1{
+  display: flex;
+  justify-content: space-around;
+  background-color: #04AA6D;
+}
+
+/* Demonstrate the functionality and responsiveness of media query */
+@media screen and (max-width: 800px) {
+  body{
+    background-color: rgb(194, 197, 197);
+  }
+  .column1{
+    width: calc(100%/2);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    background-color:rgb(215, 205, 205);
+  }
+  .column1{
+    width: calc(100%/1);
+  }
+}
+
+/* Extras */
+#gallery {
+  text-align: center;
+}

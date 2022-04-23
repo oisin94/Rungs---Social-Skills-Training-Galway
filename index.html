@@ -6,21 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rungs - Galway</title>
+    <!-- Bootstrap links here for the nav, carousel and card -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
 
     <div id="home"></div>
+    <!-- This is the nav bar taken from bootstrap with links to sections added -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home"> <img src="images/Image 15-04-2022 at 05.29.JPEG" alt="" height="30px">
             </a>
+            <!-- Logo created from https://studio.tailorbrands.com/brands/free -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,6 +48,7 @@
     </nav>
 
 
+    <!-- Here is the carouselcomponent pasted in from Bootstrap -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -76,9 +80,12 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
+    <br>
+    <br>
     <div class="container">
 
+
+        <!-- This is the main content of the website -->
         <h2>What is Rungs?</h2>
         <p class="lead">Rungs help individuals improve social skills and assist clients in climbing the ladder to
             promotions, new jobs,
@@ -107,24 +114,42 @@
             energy. Make use bored or awkward. There are simple things that we can do to make ourselves more memorable-
             we
             just
-            need the awareness and the practice
+            need the awareness and the practice. You can read more in the article below!
         </p>
+
+        <!-- Bootstap card with image placed in from the src website -->
+        <div class="card" style="width: 18rem;">
+            <img src="images/IMG_6087.jpg" class="card-img-top" alt="article link">
+            <div class="card-body">
+                <h5 class="card-title">The Importance of Strong Social Skills</h5>
+                <p class="card-text">Not everyone has an easy time getting out, meeting people, and making friends. Some
+                    individuals tend to avoid social situations because of the anxiety and ... </p>
+                <a href="https://www.pyramid-healthcare.com/why-it-is-important-to-have-strong-social-skills-and-5-ways-to-enhance-them/"
+                    class="btn btn-primary">Read Article</a>
+            </div>
+        </div>
+
 
         <br>
         <br>
+
+        <!-- Demonstrate ol -->
 
         <h2>Who is it for?</h2>
         <p>
 
             Our coaches can help if you want to:
-            Reduce social anxiety
-            Improve leadership skills
-            Learn how to captivate an audience
-            Make a great first impression
-            Work on Presentation Skills
-            Be funnier
-            Be a clear Communicator
-            Gain confidence around people
+            <li>
+                <ol> Reduce social anxiety</ol>
+                <ol> Improve leadership skills</ol>
+                <ol>Learn how to captivate an audience</ol>
+                <ol>Make a great first impression</ol>
+                <ol>Work on Presentation Skills</ol>
+                <ol>Be funnier</ol>
+                <ol>Be a clear Communicator</ol>
+                <ol>Gain confidence around people</ol>
+
+            </li>
         </p>
 
 
@@ -141,6 +166,7 @@
             ipsa vel impedit corrupti dignissimos velit laudantium, nobis quasi architecto recusandae quis dolor itaque.
         </p>
 
+        <!-- Blockquotes for reviews -->
         <h2>What People Say</h2>
         <blockquote class="blockquotes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, commodi
             nostrum? Repudiandae quisquam totam porro error veniam optio aspernatur, cumque explicabo, quod, corrupti
@@ -157,31 +183,74 @@
             molestiae autem exercitationem quos enim neque quas.</blockquote>
         <footer class="blockquote-footer"> some guy</footer>
 
+
+
+        <h2>Learn More</h2>
+        <!-- Dom manipulation using eventListener as found on W3 schools -->
+
+        <h4>Social Skills Class</h4>
+        <div class="java">
+            <p style="display: none;">Social skills classes run twice a week. We go through all the essential elements
+                such
+                as confidence, clarity,
+                charisma and general communication skills. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quam
+                ratione ducimus omnis accusantium quibusdam magni tempore aliquam excepturi, sit doloribus eaque nemo
+                vitae
+                distinctio eligendi. Suscipit eum officiis officia culpa.</p>
+            <h4 id="target1">Taking Risk Seminar</h4>
+            <p style="display: none;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus optio
+                pariatur aliquid obcaecati
+                alias, eum, libero iure enim nam nostrum deleniti laudantium voluptatibus? Sapiente saepe libero
+                possimus
+                perferendis doloribus vel.
+                Ex fugit officia dignissimos doloremque sed iste cupiditate ipsum rem inventore rerum! Eaque ullam
+                officia
+                illo a quidem numquam nesciunt voluptatibus sapiente quod alias. Earum assumenda consequatur quis minima
+                quos.</p>
+            <h4>Improv Classes</h4>
+            <p class="classList">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero sequi perspiciatis
+                vel
+                eius porro maxime sed
+                dolorem. Cupiditate, aut saepe! Eveniet fugit ut debitis modi quam assumenda nulla corporis quisquam?
+                Repudiandae at blanditiis dolore vero consequatur nulla odio, sed ipsum facere. Molestias hic ipsum iste
+                corrupti repellat consectetur qui similique ea? Tenetur, dolores nostrum. Ex excepturi dolore quo
+                nesciunt
+                expedita.</p>
+        </div>
+
     </div>
 
 
+    <br>
+    <br>
+    <br>
+    <br>
 
-
+    <!-- Gallery with thumbnail reveiling a larger image onclick as found on w3 schools -->
 
     <h2 id="gallery">Gallery</h2>
+    <p style="text-align: center;">Click to see full image</p>
+    <br>
     <div class="row">
         <div class="column1">
-            <img src="images/IMG_6038.jpg" alt="Nature" onclick="myFunction(this);">
+            <img src="images/IMG_6038.jpg" alt="meeting pic1" onclick="myFunction(this);">
         </div>
         <div class="column1">
-            <img src="images/IMG_710B2DDA2E08-1.jpeg" alt="Snow" onclick="myFunction(this);">
+            <img src="images/IMG_710B2DDA2E08-1.jpeg" alt="meeting pic2" onclick="myFunction(this);">
         </div>
         <div class="column1">
-            <img src="images/IMG_6040.jpg" alt="Mountains" onclick="myFunction(this);">
+            <img src="images/IMG_6040.jpg" alt="meeting pic3" onclick="myFunction(this);">
         </div>
         <div class="column1">
-            <img src="images/IMG_6039.jpg" alt="Lights" onclick="myFunction(this);">
+            <img src="images/IMG_6039.jpg" alt="meeting pic4" onclick="myFunction(this);">
         </div>
         <div class="column1">
-            <img src="images/IMG_6042.jpg" alt="Lights" onclick="myFunction(this);">
+            <img src="images/IMG_6042.jpg" alt="meeting pic5" onclick="myFunction(this);">
         </div>
         <div class="column1">
-            <img src="images/IMG_F758C4F26A92-1.jpeg" alt="Lights" onclick="myFunction(this);">
+            <img src="images/IMG_F758C4F26A92-1.jpeg" alt="meeting pic6" onclick="myFunction(this);">
         </div>
     </div>
 
@@ -195,7 +264,7 @@
 
 
 
-
+    <!-- Contact section taken from w3 school with changes made for form validation using HTML and Javascript -->
     <div class="container2">
         <div style="text-align: center;">
             <h1 id="contact">Contact Us</h1>
@@ -204,7 +273,7 @@
 
             <div class="column">
                 <form action="" onsubmit="return validateForm()" id="myForm">
-                    <!-- return missing here -->
+                    <!-- error with return -->
 
                     <p>
                         <label for="fname">Full Name:</label>
@@ -230,24 +299,26 @@
                         <br>
 
                     </p>
-                    <!-- <p>
+                    <p>
                         <label for="checkPhone">Contact by phone</label>
                         <input type="checkbox" id="checkPhone" name="check" class="check" onclick="check()">
                         <label for="radio">Contact by email</label>
-                        <input type="checkbox" id="checkEmail" name="check" class="check"  disabled>
-                    </p>  -->
+                        <input type="checkbox" id="checkEmail" name="check" class="check" disabled>
+                    </p>
 
                     <button type="submit" onclick="submitMessage()">Submit</button>
                     <!-- <input type="submit" value="Click Me" onclick="submitMessage()"> -->
                 </form>
             </div>
+
+            <!-- Google Maps taken from https://support.google.com/maps/answer/144361?hl=en&co=GENIE.Platform%3DDesktop -->
             <div class="column">
                 <h3>Our Location</h3>
                 <div class="mapouter">
                     <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
                             src="https://maps.google.com/maps?q=eyre%20square,%20galway&t=&z=13&ie=UTF8&iwloc=&output=embed"
                             frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe><a
-                            href="https://123movies-to.org">123 movies</a><br>
+                            href="https://123movies-to.org">123 m</a><br>
 
                         <a href="https://www.embedgooglemap.net">google embed maps</a>
 
@@ -267,9 +338,9 @@
 
 
 
+    <!-- Added footer for a cleaner finish and to demonstrate more css functions -->
 
-
-    <div class="footer">
+    <div class="footer1">
         <div class="colfoot">
             <h3>Learn tutorials</h3>
             <li>
@@ -277,9 +348,7 @@
                 <ul>other</ul>
                 <ul>other</ul>
                 <ul>other</ul>
-                <ul>other</ul>
-                <ul>other</ul>
-                <ul>other</ul>
+
             </li>
         </div>
         <div>
@@ -290,9 +359,7 @@
                 <ul>other</ul>
                 <ul>other</ul>
                 <ul>other</ul>
-                <ul>other</ul>
-                <ul>other</ul>
-                <ul>other</ul>
+
             </li>
         </div>
         <div>
@@ -302,17 +369,12 @@
                 <ul>other</ul>
                 <ul>other</ul>
                 <ul>other</ul>
-                <ul>other</ul>
-                <ul>other</ul>
-                <ul>other</ul>
+
             </li>
         </div>
         <div>
             <h3>Contact</h3>
             <li>
-                <ul>other</ul>
-                <ul>other</ul>
-                <ul>other</ul>
                 <ul>other</ul>
                 <ul>other</ul>
                 <ul>other</ul>
